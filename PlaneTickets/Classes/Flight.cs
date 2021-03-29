@@ -20,6 +20,8 @@ namespace PlaneTickets
             DateArrival = DateTime.Now.AddHours(3);
             CityDepature = "City #1";
             CityArrival = "City #2";
+
+            Console.WriteLine($"{GetType().Name} default ctor called");
         }
 
         public Flight(DateTime dateDepature, DateTime dateArrival, string cityDepature, string cityArrival)
@@ -28,6 +30,8 @@ namespace PlaneTickets
             DateArrival = dateArrival;
             CityDepature = cityDepature;
             CityArrival = cityArrival;
+
+            Console.WriteLine($"{GetType().Name} default ctor called");
         }
 
         public Flight(Flight flt)
@@ -36,6 +40,8 @@ namespace PlaneTickets
             DateArrival = flt.DateArrival;
             CityDepature = flt.CityDepature;
             CityArrival = flt.CityArrival;
+
+            Console.WriteLine($"{GetType().Name} default ctor called");
         }
     }
 }

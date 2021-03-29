@@ -39,6 +39,8 @@ namespace PlaneTickets
             SitsNumber = 0;
             NumberOfPlane = 0;
             TypeOfPlane = "Some type";
+
+            Console.WriteLine($"{GetType().Name} default ctor called");
         }
 
         public Plane(int sitsNumber, int numberOfPlane, string typeOfPlane)
@@ -46,6 +48,8 @@ namespace PlaneTickets
             SitsNumber = sitsNumber;
             NumberOfPlane = numberOfPlane;
             TypeOfPlane = typeOfPlane;
+
+            Console.WriteLine($"{GetType().Name} default ctor called");
         }
 
         public Plane(Plane pln)
@@ -53,6 +57,8 @@ namespace PlaneTickets
             SitsNumber = pln.SitsNumber;
             NumberOfPlane = pln.NumberOfPlane;
             TypeOfPlane = pln.TypeOfPlane;
+
+            Console.WriteLine($"{GetType().Name} default ctor called");
         }
         
     }
